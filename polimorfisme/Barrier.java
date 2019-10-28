@@ -12,7 +12,8 @@ package polimorfisme;
 public class Barrier implements Destroyable{
     private int strength;          
     public Barrier (int strength){         
-        this.strength = strength;     
+        this.strength = strength; 
+        System.out.print("Hayo");    
     }          
     public void setStrength (int strength){         
         this.strength = strength;     
