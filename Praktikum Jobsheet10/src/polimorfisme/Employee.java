@@ -7,8 +7,12 @@ package polimorfisme;
 
 /**
  *
- * @author hp
+ * @author ACER
  */
-public interface Destroyable {
-     public void destroyed();
+public class Employee {
+    protected String name;
+    
+    public String getEmployeeInfo(){
+        return "Name = "+name;
+    }
 }

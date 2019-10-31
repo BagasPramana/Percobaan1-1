@@ -7,17 +7,12 @@ package polimorfisme;
 
 /**
  *
- * @author hp
+ * @author ACER
  */
 public class Tester1 {
-
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
-        PermanentEmployee pEmp = new PermanentEmployee("Dedik",500);
-        IntershipEmployee iEmp = new IntershipEmployee("Sunarto",5);
+        PermanentEmployee pEmp = new PermanentEmployee("Dedik", 500);
+        InternshipEmployee iEmp = new InternshipEmployee("Sunarto", 5);
         ElectricityBill eBill = new ElectricityBill(5, "A-1");
         Employee e;
         Payable p;
@@ -26,5 +21,4 @@ public class Tester1 {
         p = pEmp;
         p = eBill;
     }
-    
 }

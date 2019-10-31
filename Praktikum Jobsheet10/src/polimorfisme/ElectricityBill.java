@@ -7,46 +7,42 @@ package polimorfisme;
 
 /**
  *
- * @author hp
+ * @author ACER
  */
 public class ElectricityBill implements Payable{
-     private int kwh;
+    private int kwh;
     private String category;
     
     public ElectricityBill(int kwh, String category){
-        this.kwh=kwh;
-        this.category=category;
+        this.kwh = kwh;
+        this.category = category;
     }
-    public int getkwh(){
-        return kwh;    
+    public int getKwh(){
+        return kwh;
     }
     public void setKwh(int kwh){
-        this.kwh=kwh;
+        this.kwh = kwh;
     }
     public String getCategory(){
         return category;
     }
-    public void setCategory(String category){
-        this.category=category;
+    public void setcategory(String category){
+        this.category = category;
     }
-    
     @Override
     public int getPaymentAmount(){
-        return kwh*getBasePrice();   
+        return kwh*getBasePrice();
     }
-
-    public int getBasePrice() {
-        int bPrice=0;
+    public int getBasePrice(){
+        int bPrice = 0;
         switch(category){
-            case "R-1" : int bprice = 100;
-            break;
-            case "R-2" : bprice = 200;
-            break;
+            case "R-1" : bPrice = 100;break;
+            case "R-2" : bPrice = 200;break;
         }
         return bPrice;
     }
     public String getBillInfo(){
-        return "kWH = "+kwh+"\n"+
-                "Category = "+category+"("+getBasePrice()+"per kWH)\n";
-    }
+        return "kwh = "+kwh+"\n"+
+                "Category = "+category+"("+getBasePrice()+" per kWH)\n";
+    }  
 }

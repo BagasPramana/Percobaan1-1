@@ -7,7 +7,7 @@ package polimorfisme;
 
 /**
  *
- * @author hp
+ * @author ACER
  */
 public interface Payable {
     public int getPaymentAmount();
